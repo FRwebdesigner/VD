@@ -6,10 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-</header>
-        <h1></h1>
-  <div class="reels-grid">
-    <!-- Ejemplo 1 -->
-    <div id='07b02207602203a02204a06d07905605805806304504806607304902207d' style='height:450px;width:720px'></div>
+<div class="reels-grid">
+  <div style="height:450px; width:720px; background:#000; position:relative;">
+    <video 
+      controls
+      width="720" 
+      height="450"
+      style="width:100%; height:100%; object-fit:contain;"
+      playsinline 
+      preload="metadata"
+    >
+      <source src="vd/video1.mp4" type="video/mp4">
+      Tu navegador no soporta video.
+    </video>
+
+    <!-- Botón de descarga visible -->
+    <a 
+      href="vd/video1.mp4" 
+      download="Choripaneros_Obras_enero_2026.mp4"
+      style="position:absolute; bottom:15px; left:50%; transform:translateX(-50%);
+             padding:10px 24px; background:#c1121f; color:white; border-radius:50px;
+             text-decoration:none; font-weight:bold; z-index:10; box-shadow:0 4px 12px rgba(0,0,0,0.5);"
+    >
+      ⬇ Descargar
+    </a>
+  </div>
+  
+  <p>Choripaneros Obras enero 2026</p>
+</div>
+<script src="file.js"></script>
 </body>
 </html>
